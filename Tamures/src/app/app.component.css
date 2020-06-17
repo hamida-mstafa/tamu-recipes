@@ -1,0 +1,197 @@
+
+
+.container {
+  width: 600px;
+  height: 420px;
+  position: relative;
+  perspective: 800px;
+	margin: 3rem auto;
+}
+
+#options {
+	margin: 0px auto;
+  margin-top: -20px;
+	width: 200px;
+	text-align: center;
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+#card figure {
+  margin: 0;
+  position: absolute;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 1px 3px rgba(0,0,0,.3);
+  backface-visibility: hidden;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 70px;
+  width:70px;
+}
+
+.back-logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 50px;
+  width: 50px;
+  transform: rotateY(180deg);
+}
+
+.logo img, .back-logo img {
+  height: 50px;
+}
+
+#card .front {
+  background: rgb(255, 255, 255,0.3)
+  ;
+}
+#card .back {
+  background:rgb(255, 255, 255,0.3)
+  ;
+  transform: rotateY( 180deg );
+}
+
+#card.flipped {
+  transform: rotateY( 180deg );
+}
+
+@keyframes powerFlip {
+  from {
+    box-shadow: 5px 10px 5px rgba(0,0,0,0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px 20px rgba(142, 68, 173,0.1);
+  }
+}
+
+@keyframes powerFlipTwo {
+  from {
+    box-shadow: 5px 10px 5px rgba(0,0,0,0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px 20px rgba(142, 68, 173,0.1);
+  }
+}
+
+
+#flip {
+  animation-name: powerFlipTwo;
+  animation-timing-function: easeIn;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-iteration: 1;
+  height: 30px;
+  width: 200px;
+  background: rgb(255,69,0)	;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  transition: all 150ms;
+  cursor: pointer;
+}
+
+#flip:hover {
+  background: rgb(255,69,0)	;
+}
+
+#flip.powered {
+  animation-name: powerFlip;
+  animation-timing-function: easeIn;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-iteration: 1;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin-bottom: 1rem;
+}
+
+.front .form-side {
+  padding-top: 20px;
+  padding-left: 1rem;
+  width: 40%;
+  height: 100%;
+}
+
+.back .form-side {
+  padding-top: 50px;
+  padding-right: 1rem;
+  width: 40%;
+  height: 100%;
+}
+
+
+.front .photo-side {
+  width: 50%;
+  height: 100%;
+  background: url('https://bit.ly/3dg0QCm');
+  background-size: cover;
+  background-position: right;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.back .photo-side {
+  width: 50%;
+  height: 100%;
+  background: url('https://bit.ly/3dg0QCm');
+  background-size: cover;
+  background-position: left;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+
+}
+
+label {
+  font-size: 90%;
+  margin-bottom: 5px;
+}
+
+.form input {
+  height: 20px;
+  padding-left: 3px;
+}
+
+.lgn-btn {
+  background: rgba(52, 152, 219,1.0);
+  color: white;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+}
+
+.terms a {
+  color: rgb(41, 185, 101);
+  text-decoration: none;
+
+}
+
+#message{
+  color:white;
+}
