@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Tamures"
+    }
+  },
+  "defaultProject": "Tamures",
+  "cli": {
+    "analytics": "f067dae1-951f-4251-bde0-26fc16c48c94"
+  }
 }
