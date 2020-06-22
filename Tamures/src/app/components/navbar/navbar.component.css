@@ -1,0 +1,47 @@
+nav {
+    right: 0px;
+    background-color: lightgray;
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transform: translateX(200px);
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+  nav:after {
+    content: '';
+    background: lightgray;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: -40px;
+    top: 50px;
+    border-radius: 50%;
+  
+  }
+  li, a{
+    padding:10px 100px 18px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+  li:hover {
+    background-color:red;
+    color: lightgray;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+  }
+  
+  nav:hover {
+    transform: translateX(0px);
+  }
+  * {
+    padding: 0;
+    margin: 0;
+  }

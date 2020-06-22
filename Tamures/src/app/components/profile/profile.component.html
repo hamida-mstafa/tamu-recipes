@@ -1,58 +1,72 @@
+<app-navbar></app-navbar>
 <body ng-app="employeeApp" ng-controller="employeeController">
-  <div class="content-wrapper">
-    <h2>Profile Updates</h2>
+    <div class="content-wrapper">
 
-    <div class="everyone-wrapper">
-        <section ng-switch on="(editIndex == $index)"
-                 ng-repeat="person in employeeArray track by $index"
-                 class="clearfix">
-            <div class="img-wrapper clearfix">
-                <img ng-src="{{person.imgSrc}}">
+        <h2><a href=""></a>PROFILE UPDATES</h2>
+
+        <hr>
+
+        <div class='container'>
+            <div class='row'>
+                <div class="edit-wrapper clearfix">
+                    <div class="col-md-4">
+                        <button class="button" style="vertical-align:middle"><span>UPDATE </span></button>
+                        <br>
+                        <button class="button" style="vertical-align:middle"><span>SAVE </span></button>
+                        <br>
+                        <button class="button" style="vertical-align:middle"><span>DELETE </span></button>
+                    </div>
+                </div>
+
+                <div class="everyone-wrapper">
+                    <section ng-switch on="(editIndex == $index)" ng-repeat="person in employeeArray track by $index"
+                        class="clearfix">
+                        <div class="img-wrapper clearfix">
+                            <img ng-src="8person.imgSrc8">
+                        </div>
+                        <div class="info-wrapper clearfix">
+                            <h3 ng-switch-default> <span></span>
+                            </h3>
+
+                            <p ng-switch-default class="p-desc"></p>
+                            <span ng-switch-default class="from"></span> <span ng-switch-default class="phone"></span>
+                            <span ng-switch-default class="email"></span>
+                            <h3 ng-switch-when="true">
+
+                                <p>Click on the "Choose File" button to upload a file:</p>
+
+                                <form action="/action_page.php">
+                                    <input type="file" id="myFile" name="filename">
+                                    <input type="submit">
+                                </form>
+                                <div class="col-md-6">
+                                    <br>
+                                    <input ng-model="editObject.firstName" placeholder="First Name" type="text" /><br>
+                                    <br>
+                                    <input ng-model="editObject.lastName" placeholder="Last Name" type="text" /><br>
+                                    <br>
+                                    <input ng-model="editObject.jobTitle" placeholder="contacts" type="text" /><br>
+                                    <br>
+
+                                    <input ng-model="editObject.firstName" placeholder="Email" type="text" /><br>
+                                    <br>
+
+                                    <input ng-model="editObject.firstName" placeholder="password" type="text" /><br>
+                                    <br>
+                                    <form>
+                                        Bio: <br />
+                                        <textarea rows = "5" cols = "50" name = "description">
+                                           Enter biography here...
+                                        </textarea>
+                                     </form>
+
+                                </div>
+                            </h3>
+                        </div>
+
+                    </section>
+                </div>
             </div>
-            <div class="info-wrapper clearfix">
-                <!-- Default Information -->
-                <h3 ng-switch-default>{{person.firstName}} {{person.lastName}} <span>| {{person.jobTitle}}</span>
-                </h3>
-
-                <p ng-switch-default class="p-desc">{{person.jobDesc}}</p>
-                <span ng-switch-default class="from">From: {{person.from.city}}, {{person.from.state}}</span> <span
-                    ng-switch-default class="phone">Phone: {{person.phone}}</span> <span ng-switch-default
-                                                                                         class="email">Email: {{person.email}}</span>
-                <!-- Edit Fields -->
-                <h3 ng-switch-when="true">
-                    <input ng-model="editObject.firstName" placeholder="First Name" type="text"/>
-                    <input ng-model="editObject.lastName" placeholder="Last Name" type="text"/>
-                    <input ng-model="editObject.jobTitle" placeholder="phone number" type="text"/>
-                </h3>
-
-                <p ng-switch-when="true" class="p-desc">
-                    <textarea ng-model="editObject.jobDesc" placeholder="Job Description"> </textarea>
-                </p>
-                <span ng-switch-when="true" class="from">
-                    <input ng-model="editObject.from.city" id="city" type="text" placeholder="City"/>
-                    <input ng-model="editObject.from.state" id="state" type="text" placeholder="State"/>
-                </span>
-                <span  ng-switch-when="true" class="phone">
-                    <input ng-model="editObject.phone" type="text" placeholder="Phone"/>
-                </span>
-                <span  ng-switch-when="true" class="email">
-                    <input ng-model="editObject.email" type="text" placeholder="Email"/>
-                </span>
-
-            </div>
-            <div class="edit-wrapper clearfix">
-
-                <!-- Default Buttons -->
-                <button class="yellow" ng-switch-default ng-click="editingPerson($index)">edit</button>
-               <!-- <button class="red" ng-switch-default>trash</button>-->
-              <!--More functionality going to be added later-->
-
-                <!--Buttons for editing -->
-                <button class="green" ng-switch-when="true" ng-click="saveEdit($index)">save</button>
-                <button class="red" ng-switch-when="true" ng-click="cancelEdit()">X</button>
-            </div>
-
-        </section>
+        </div>
     </div>
-</div>
 </body>
