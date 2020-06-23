@@ -1,104 +1,125 @@
+body {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+h2{
+  text-align: center;
+}
+#save,#delete,#update{
+  margin-left: 30px;
+  background-color: darkred;
+}
+*{
+  background-color: #F5F5DC;
+}
+#btn-ingredient{
+  background-color: darkred;
+}
 
 
-    div.actions{
-    background-color: #EAF0F1;
-    height: 75px;
-    padding: 20px;
-    }
 
-    div.main-content{
-    margin-top: 10px;
-    }
 
-    .list-item{
-    text-decoration: none;
-    color: #333333;
-    background: #F7F7F7;
-    border: 1px solid #dedfe0;
-    margin: 1.3rem 0;
-    padding-left: 1.6rem;
-    padding-top: 0.6rem;
-    display: block;
-    transition: background .3s ease;
-    }
 
-    .list-item:hover {
-    background: #eeeeee;
-    text-decoration: none;
-    color: black;
-    }
-
-    .list-item__title {
-    font-size: 1.8rem;
-    margin-bottom: .4rem
-    }
-
-    .list-item__subtitle {
-    color: #666;
-    font-size: 1.2rem;
-    font-weight: 300;
-    font-style: italic;
-    }
-
-    .ingredient-card{
-    border: 1px solid #dedfe0;
-    margin: 1rem 0;
-    background: #F7F7F7;
-    color: #333333;
-    padding-left: 1.5rem;
-    padding-top: 0.5rem;
-    }
-
-    .ingredient-card:hover{
-    background: #eeeeee;
-    text-decoration: none;
-    color: black;
-    }
-
-    .spanStyle{
-    float: right;
-    }
-
-    @media (min-width: 320px) and (max-width: 480px) {
-    #btn-ingredient{
-        float: right;
-    }
-    #add-recepie{
-        margin-right: -15px;
-    }
-    #filter-recepies{
-        margin-left: -15px;
-    }
-    }
-
-    .edit-actions{
-    background-color: #EAF0F1;
-    height: 50px;
-    padding-top: 10px;
-    font-size: 20px;
-    }
-
-    a:hover{
-    text-decoration: none;
-    }
-
-    body, html{
-    height: 100%;
-    }
-
-    .wrapper{
-    min-height: 100%;
-    position: relative;
-    }
-    .content{
-    padding-bottom: 100px;
-    }
-
-    .footer{
-    position: absolute;
-    bottom: 10px;
-    height: 60px;
-    }
-    h2{
-      text-align: center;
-    }

@@ -1,72 +1,93 @@
-<app-navbar></app-navbar>
-<body ng-app="employeeApp" ng-controller="employeeController">
-    <div class="content-wrapper">
+<div class="row justify-content-center">
 
-        <h2><a href=""></a>PROFILE UPDATES</h2>
-
-        <hr>
-
-        <div class='container'>
-            <div class='row'>
-                <div class="edit-wrapper clearfix">
-                    <div class="col-md-4">
-                        <button class="button" style="vertical-align:middle"><span>UPDATE </span></button>
-                        <br>
-                        <button class="button" style="vertical-align:middle"><span>SAVE </span></button>
-                        <br>
-                        <button class="button" style="vertical-align:middle"><span>DELETE </span></button>
-                    </div>
-                </div>
-
-                <div class="everyone-wrapper">
-                    <section ng-switch on="(editIndex == $index)" ng-repeat="person in employeeArray track by $index"
-                        class="clearfix">
-                        <div class="img-wrapper clearfix">
-                            <img ng-src="8person.imgSrc8">
-                        </div>
-                        <div class="info-wrapper clearfix">
-                            <h3 ng-switch-default> <span></span>
-                            </h3>
-
-                            <p ng-switch-default class="p-desc"></p>
-                            <span ng-switch-default class="from"></span> <span ng-switch-default class="phone"></span>
-                            <span ng-switch-default class="email"></span>
-                            <h3 ng-switch-when="true">
-
-                                <p>Click on the "Choose File" button to upload a file:</p>
-
-                                <form action="/action_page.php">
-                                    <input type="file" id="myFile" name="filename">
-                                    <input type="submit">
-                                </form>
-                                <div class="col-md-6">
-                                    <br>
-                                    <input ng-model="editObject.firstName" placeholder="First Name" type="text" /><br>
-                                    <br>
-                                    <input ng-model="editObject.lastName" placeholder="Last Name" type="text" /><br>
-                                    <br>
-                                    <input ng-model="editObject.jobTitle" placeholder="contacts" type="text" /><br>
-                                    <br>
-
-                                    <input ng-model="editObject.firstName" placeholder="Email" type="text" /><br>
-                                    <br>
-
-                                    <input ng-model="editObject.firstName" placeholder="password" type="text" /><br>
-                                    <br>
-                                    <form>
-                                        Bio: <br />
-                                        <textarea rows = "5" cols = "50" name = "description">
-                                           Enter biography here...
-                                        </textarea>
-                                     </form>
-
-                                </div>
-                            </h3>
-                        </div>
-
-                    </section>
-                </div>
-            </div>
+  <div class="col-md-2">
+    <div class="profile-sidebar">
+      <!-- SIDEBAR USERPIC -->
+      <div class="profile-userpic">
+        <!-- <img src="http://keenthemes.com/preview/metronic/theme/assets/admin/pages/media/profile/profile_user.jpg" class="img-responsive" alt=""> -->
+      </div>
+      <!-- END SIDEBAR USERPIC -->
+      <!-- SIDEBAR USER TITLE -->
+      <div class="profile-usertitle">
+        <div class="profile-usertitle-name">
+          <span class="hidden-xs">Shy</span>
         </div>
+        <div class="profile-usertitle-job">Chef
+        </div>
+      </div>
+      <!-- END SIDEBAR USER TITLE -->
+      <!-- SIDEBAR MENU -->
+
+
     </div>
-</body>
+    <!-- END MENU -->
+    <div class="portlet light bordered">
+      <!-- STAT -->
+      <div class="row list-separated profile-stat">
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="uppercase profile-stat-title"> 37 </div>
+          <div class="uppercase profile-stat-text"> Recepies </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="uppercase profile-stat-title"> 51 </div>
+          <div class="uppercase profile-stat-text"> Tasks </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-6">
+          <div class="uppercase profile-stat-title"> 61 </div>
+          <div class="uppercase profile-stat-text"> Uploads </div>
+        </div>
+      </div>
+      <!-- END STAT -->
+      <div>
+        <h4 class="profile-desc-title">About Shy</h4>
+        <span class="profile-desc-text"> A chef that is also passionate about enterprenurship </span>
+        <div class="margin-top-20 profile-desc-link">
+          <i class="fa fa-globe"></i>
+          <a href="https://www.apollowebstudio.com">shyweb.com</a>
+        </div>
+        <div class="margin-top-20 profile-desc-link">
+          <i class="fa fa-twitter"></i>
+          <a href="https://www.twitter.com/jasondavisfl/">@shy</a>
+        </div>
+        <div class="margin-top-20 profile-desc-link">
+          <i class="fa fa-facebook"></i>
+          <a href="https://www.facebook.com/">shy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="col-md-6 shy">
+     <div class="jumbotron">
+      <!-- <div class="form_main col-md-4 col-sm-5 col-xs-7"> -->
+      <h4 class="heading"><strong>PERSONAL </strong> CONTACTS <span></span></h4>
+      <div class="form">
+        <div class="row">
+          <form action="upload.php" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+          </form>
+          <br>
+          <br>
+          <form action="" method="" id="contactFrm" name="contactFrm">
+            <input type="text" required="" placeholder="Name" value="" name="name" class="txt">
+            <input type="text" required="" placeholder="Email" value="" name="email" class="txt">
+            <input type="password" required="" placeholder="Change Password" value="" name="password" class="txt"><br>
+            <input type="text" required="" placeholder="contacts" value="" name="contacts" class="txt">
+            <br>
+
+            <h5>Bio:</h5>
+            <textarea cols="53" name="mytextbox" rows="5"></textarea>
+            <br>
+            <br>
+            <button class="button button2">Save</button>
+
+            <button class="button button2">Delete</button>
+            <button class="button button2">Update</button>
+          </form>
+        </div>
+      </div>
+     </div>
+  </div>
