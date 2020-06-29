@@ -1,17 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  selector: 'app-socialshare',
+  templateUrl: './socialshare.component.html',
+  styleUrls: ['./socialshare.component.css']
 })
-export class HomepageComponent implements OnInit {
+export class SocialshareComponent implements OnInit {
 
   currentLocation:string
   getLocation (){
     this.currentLocation = window.location.host+'/'
   }
-
   constructor() { }
 
   ngOnInit(): void {
@@ -19,3 +18,4 @@ export class HomepageComponent implements OnInit {
   }
 
 }
+

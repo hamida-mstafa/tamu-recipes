@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Tamures</title>
@@ -7,104 +8,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" class="w3-circle" href="https://bit.ly/30TYTsY" />
 
-  
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
+    nonce="3jhMOnJR"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"
+></script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+
+
   <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="page">
-  <app-root></app-root>
-</div>
-<div id="loading"></div>
+    <app-root></app-root>
+  </div>
+  <div id="loading"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script>
-    $(document).ready(function() {
-    $('#flip').on('click', function(e) {
-      e.preventDefault();
-      $('#card').toggleClass('flipped');
-      $('#flip').toggleClass('powered');
-      if ($('#card').hasClass('flipped')) {
-        $('#message').text("Need to sign up?");
-        $('#flip').text("Create an account");
-      } else {
-        $('#message').text("Already have an account?");
-        $('#flip').text("Log in");
-      }
+    $(document).ready(function () {
+      $('#flip').on('click', function (e) {
+        e.preventDefault();
+        $('#card').toggleClass('flipped');
+        $('#flip').toggleClass('powered');
+        if ($('#card').hasClass('flipped')) {
+          $('#message').text("Need to sign up?");
+          $('#flip').text("Create an account");
+        } else {
+          $('#message').text("Already have an account?");
+          $('#flip').text("Log in");
+        }
+      });
     });
-  });
-  function onReady(callback) {
-    var intervalId = window.setInterval(function() {
-      if (document.getElementsByTagName('body')[0] !== undefined) {
-        window.clearInterval(intervalId);
-        callback.call(this);
-      }
-    }, 1000);
-  }
-  function setVisible(selector, visible) {
-    document.querySelector(selector).style.display = visible ? 'block' : 'none';
-  }
-  onReady(function() {
-    setVisible('.page', true);
-    setVisible('#loading', false);
-  });
+    function onReady(callback) {
+      var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+          window.clearInterval(intervalId);
+          callback.call(this);
+        }
+      }, 1000);
+    }
+    function setVisible(selector, visible) {
+      document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    }
+    onReady(function () {
+      setVisible('.page', true);
+      setVisible('#loading', false);
+    });
   </script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
-</html><!doctype html>
+
+</html>
+<!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Tamures</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" class="w3-circle" href="https://bit.ly/30TYTsY" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
+
 <body>
   <div class="page">
-  <app-root></app-root>
-</div>
-<div id="loading"></div>
+    <app-root></app-root>
+  </div>
+  <div id="loading"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script>
-    $(document).ready(function() {
-    $('#flip').on('click', function(e) {
-      e.preventDefault();
-      $('#card').toggleClass('flipped');
-      $('#flip').toggleClass('powered');
-      if ($('#card').hasClass('flipped')) {
-        $('#message').text("Need to sign up?");
-        $('#flip').text("Create an account");
-      } else {
-        $('#message').text("Already have an account?");
-        $('#flip').text("Log in");
-      }
+    $(document).ready(function () {
+      $('#flip').on('click', function (e) {
+        e.preventDefault();
+        $('#card').toggleClass('flipped');
+        $('#flip').toggleClass('powered');
+        if ($('#card').hasClass('flipped')) {
+          $('#message').text("Need to sign up?");
+          $('#flip').text("Create an account");
+        } else {
+          $('#message').text("Already have an account?");
+          $('#flip').text("Log in");
+        }
+      });
     });
-  });
-  function onReady(callback) {
-    var intervalId = window.setInterval(function() {
-      if (document.getElementsByTagName('body')[0] !== undefined) {
-        window.clearInterval(intervalId);
-        callback.call(this);
-      }
-    }, 1000);
-  }
-  function setVisible(selector, visible) {
-    document.querySelector(selector).style.display = visible ? 'block' : 'none';
-  }
-  onReady(function() {
-    setVisible('.page', true);
-    setVisible('#loading', false);
-  });
+    function onReady(callback) {
+      var intervalId = window.setInterval(function () {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+          window.clearInterval(intervalId);
+          callback.call(this);
+        }
+      }, 1000);
+    }
+    function setVisible(selector, visible) {
+      document.querySelector(selector).style.display = visible ? 'block' : 'none';
+    }
+    onReady(function () {
+      setVisible('.page', true);
+      setVisible('#loading', false);
+    });
   </script>
 
   <!-- social media script -->
@@ -112,100 +135,49 @@
     setShareLinks();
 
     function socialWindow(url) {
-        var left = (screen.width - 570) / 2;
-        var top = (screen.height - 570) / 2;
-        var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
-        // Setting 'params' to an empty string will launch
-        // content in a new tab or window rather than a pop-up.
-        // params = "";
-        window.open(url, "NewWindow", params);
+      var left = (screen.width - 570) / 2;
+      var top = (screen.height - 570) / 2;
+      var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+      // Setting 'params' to an empty string will launch
+      // content in a new tab or window rather than a pop-up.
+      // params = "";
+      window.open(url, "NewWindow", params);
     }
 
     function setShareLinks() {
-        var pageUrl = encodeURIComponent(document.URL);
-        var tweet = encodeURIComponent($("meta[property='og:description']").attr("content"));
+      var pageUrl = encodeURIComponent(document.URL);
+      var tweet = encodeURIComponent($("meta[property='og:description']").attr("content"));
 
-        $(".social-share.facebook").on("click", function () {
-            url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
-            socialWindow(url);
-        });
+      $(".social-share.facebook").on("click", function () {
+        url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+        socialWindow(url);
+      });
 
-        $(".social-share.twitter").on("click", function () {
-            url = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + tweet;
-            socialWindow(url);
-        });
+      $(".social-share.twitter").on("click", function () {
+        url = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + tweet;
+        socialWindow(url);
+      });
 
-        $(".social-share.linkedin").on("click", function () {
-            url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
-            socialWindow(url);
-        })
+      $(".social-share.linkedin").on("click", function () {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+        socialWindow(url);
+      })
     }
-</script>
-<!-- modal script -->
-<script>
-var fullPageModal = (function ($) {
-    var fpm = {};
-    
-    fpm.config = {
-        $target : $(".js__target"),
-        $pages : $("a.page"),
-        $close : $(".js__target .js__close")
-    };
-    fpm.init = function () {
-        fpm.ui();
-    };
-    fpm.ui = function () {
-        fpm.config.$pages.on("click", this, function(e) {
-            e.preventDefault();
-            fpm.loadPage($(this).attr("href"), $(this));
-            
-        });
-        fpm.config.$close.on("click", this, function(e) {
-            e.preventDefault();
-            fpm.closePage();
-        });
-    };
-    fpm.loadPage = function(pageToLoad, page) {
-        var $content = fpm.config.$target.find(".content");
-        $.ajax({
-            async: false,
-            url: pageToLoad,
-            dataType: 'html',
-            success: function(res) {                   
-                $content.html($(res).find("#content"));
-            }
-        });
-        fpm.openPage(page);
-    };
-    fpm.openPage = function (page) {
-        var offset = $(page).offset();
-        fpm.config.$target
-            .css({"left" : offset.left, "top" : offset.top, "width" : $(page).outerWidth(), "height" : $(page).outerHeight()})
-            .addClass("open");
-      setTimeout(
-              function() {
-                  fpm.config.$target.addClass("expand").addClass("move");
-              }, 500 //this should not be less than the ms value in .js__target.move
-        );
-        
-    };
-    fpm.closePage = function () {
-        fpm.config.$target.removeClass("expand");
-        setTimeout(
-            function() {
-                fpm.config.$target.removeClass("open");
-            }, 500 //this should not be less than the ms value in .js__target.move
-        );
-    };
-    return fpm;
-})(jQuery);
+  </script>
+  
+  
 
-$(function () {
-    fullPageModal.init();
-});
-</script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
