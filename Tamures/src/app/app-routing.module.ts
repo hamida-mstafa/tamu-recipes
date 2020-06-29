@@ -1,3 +1,4 @@
+import { HomepageComponent } from './components/homepage/homepage.component';
 import { UpdateComponent } from './update/update.component';
 import { SaveComponent } from './save/save.component';
 import { FilterFtComponent } from './filter-ft/filter-ft.component';
@@ -12,14 +13,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [
+
   { path: 'update', component: UpdateComponent },
   { path: 'save', component: SaveComponent },
   { path: 'filter', component: FilterFtComponent },
   { path: 'bookmark', component: BookmarkComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-  { path: '', redirectTo: "/home", pathMatch: "full" },
+  { path: 'homep', component: HomepageComponent },
+  { path: '', redirectTo: "/homep", pathMatch: "full" },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -29,7 +31,8 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [
-  HomeComponent,
+  HomepageComponent,
+
   UpdateComponent,
   BookmarkComponent,
   SaveComponent,

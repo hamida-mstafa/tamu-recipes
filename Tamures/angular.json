@@ -23,10 +23,14 @@
               "src/favicon.ico",
               "src/assets"
             ],
+
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -90,7 +94,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js"
+
+            ]
           }
         },
         "lint": {
@@ -123,6 +130,6 @@
   },
   "defaultProject": "Tamures",
   "cli": {
-    "analytics": "75490636-75d7-46be-a0e5-3a7833af4efc"
+    "analytics": false
   }
 }

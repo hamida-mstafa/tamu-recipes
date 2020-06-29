@@ -15,6 +15,9 @@ import { BookmarkDirective } from './bookmark.directive';
 import { SaveComponent } from './save/save.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateComponent } from './update/update.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { SocialshareComponent } from './components/socialshare/socialshare.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,9 @@ import { UpdateComponent } from './update/update.component';
     SaveComponent,
     UpdateComponent,
 
+    NavbarComponent,
+    HomepageComponent,
+    SocialshareComponent
   ],
   imports: [
     BrowserModule,
