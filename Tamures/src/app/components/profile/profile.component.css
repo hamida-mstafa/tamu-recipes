@@ -211,7 +211,8 @@ h4{
   padding-left: 200px;
 }
 .button {
-  background-color: darkred; /* Green */
+  background-color:#CD5C5C
+  ; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -237,4 +238,9 @@ h4{
 }
 .button button2{
   margin-left: 20px;
+}
+.jumbotron{
+  background-color:beige
+
+  ;
 }
