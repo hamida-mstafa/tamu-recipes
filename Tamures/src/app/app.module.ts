@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
-import { ProfileComponent } from './profile/profile.component';
+
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BookmarkComponent } from './bookmark/bookmark.component';
 import { FilterFtComponent } from './filter-ft/filter-ft.component';
@@ -18,6 +18,10 @@ import { UpdateComponent } from './update/update.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { SocialshareComponent } from './components/socialshare/socialshare.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthButtonComponent } from './auth-button/auth-button.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,7 @@ import { SocialshareComponent } from './components/socialshare/socialshare.compo
     LoginComponent,
     HomeComponent,
     NavComponent,
-    ProfileComponent,
+
     routingComponents,
     PageNotFoundComponent,
     BookmarkComponent,
@@ -36,13 +40,17 @@ import { SocialshareComponent } from './components/socialshare/socialshare.compo
 
     NavbarComponent,
     HomepageComponent,
-    SocialshareComponent
+    SocialshareComponent,
+    AuthButtonComponent,
+    ProfileComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
