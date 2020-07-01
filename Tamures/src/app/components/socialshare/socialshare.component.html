@@ -1,14 +1,14 @@
 <div class="links">
-
+    <p class="list-inline-item">Share:</p>
     <ul style="list-style: none;">
-        <p class="list-inline-item">Share:</p>
+        
         <li class="list-inline-item">
             <a target="_blank"
-                href="https://www.facebook.com/sharer/sharer.php?u={{currentLocation}}/its_id&src=sdkpreparse%22%20class%3D%22fb-xfbml-parse-ignore "
+                href="https://www.facebook.com/sharer/sharer.php?u={{currentLocation}}/recipe/{{recipeId}}&src=sdkpreparse%22%20class%3D%22fb-xfbml-parse-ignore "
                 class="card-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
         </li>
         <li class="list-inline-item">
-            <a href="https://twitter.com/share?ref_src={{currentLocation}}/its_id" class="card-link"><i
+            <a href="https://twitter.com/share?ref_src={{currentLocation}}/recipe/{{recipeId}}" class="card-link"><i
                     class="fa fa-twitter-square" aria-hidden="true"></i>
             </a>
         </li>
@@ -17,15 +17,10 @@
             <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"></a>
         </li>
         <li class="list-inline-item">
-            <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.website.com."
+            <a href="mailto:?subject=Hello, check this recipe out.&amp;body={{currentLocation}}/recipe/{{recipeId}}"
                 title="Share by Email">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
             </a>
-        </li>
-        <li class="list-inline-item">
-            <div class="a2a_kit">
-                <a class="a2a_button_linkedin_share" data-url="https://example.com/"></a>
-            </div>
         </li>
     </ul>
 </div>
