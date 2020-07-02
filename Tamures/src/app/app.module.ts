@@ -18,6 +18,10 @@ import { UpdateComponent } from './update/update.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { SocialshareComponent } from './components/socialshare/socialshare.component';
+import {HttpClientModule } from '@angular/common/http';
+import { RecipeComponent } from './components/recipe/recipe.component';
+import { AddRecipeComponent } from './components/add-recipe/add-recipe.component'
+import { ReactiveFormsModule, FormsModule} from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthButtonComponent } from './auth-button/auth-button.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -41,6 +45,8 @@ import { AddComponent } from './add/add.component';
     NavbarComponent,
     HomepageComponent,
     SocialshareComponent,
+    RecipeComponent,
+    AddRecipeComponent
     AuthButtonComponent,
     ProfileComponent,
     AddComponent
@@ -49,10 +55,14 @@ import { AddComponent } from './add/add.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
     FormsModule,
     BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
+
 export class AppModule { }
