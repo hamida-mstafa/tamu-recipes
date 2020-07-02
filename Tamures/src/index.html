@@ -1,23 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"  >
 
 <head>
   <meta charset="utf-8">
   <title>Tamures</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
   <link rel="shortcut icon" class="w3-circle" href="https://bit.ly/30TYTsY" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SocialIcons/1.0.1/soc.js"></script>
 
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"
     nonce="3jhMOnJR"></script>
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"
-></script>
+  <script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
   <script async src="https://static.addtoany.com/menu/page.js"></script>
 
 
 
-  <!-- Font Awesome -->
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
@@ -27,10 +35,21 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+
+<link rel="shortcut icon" class="w3-circle" href="https://bit.ly/30TYTsY" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="mat-typography">
+  <script async defer src="https://apis.google.com/js/api.js"></script>
   <div class="page">
+
+
     <app-root></app-root>
   </div>
   <div id="loading"></div>
@@ -45,34 +64,22 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 </body>
+  <script>
 
-</html>
-<!doctype html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <title>Tamures</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" class="w3-circle" href="https://bit.ly/30TYTsY" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-</head>
+  </script>
 
-<body>
-  <div class="page">
-    <app-root></app-root>
-  </div>
-  <div id="loading"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script>
     $(document).ready(function () {
       $('#flip').on('click', function (e) {
         e.preventDefault();
+
+
         $('#card').toggleClass('flipped');
+
         $('#flip').toggleClass('powered');
+
         if ($('#card').hasClass('flipped')) {
           $('#message').text("Need to sign up?");
           $('#flip').text("Create an account");
@@ -80,8 +87,10 @@
           $('#message').text("Already have an account?");
           $('#flip').text("Log in");
         }
+
       });
     });
+
     function onReady(callback) {
       var intervalId = window.setInterval(function () {
         if (document.getElementsByTagName('body')[0] !== undefined) {
@@ -90,16 +99,43 @@
         }
       }, 1000);
     }
+
     function setVisible(selector, visible) {
       document.querySelector(selector).style.display = visible ? 'block' : 'none';
     }
+
     onReady(function () {
       setVisible('.page', true);
       setVisible('#loading', false);
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-  <!-- social media script -->
+  <script>
+
+    $(document).ready(function () {
+      $("button.newItem").click(function () {
+        $("ol").append("<li>list item <a href='javascript:void(0)' class='addFav'>+</a></li>");
+      });
+
+      //Note it's the on "click",the thing with $this...that makes it so only the nearest item is affected not all//
+
+      $(document).on("click", "a.addFav", function () {
+
+        $(this).attr("data-mark", "fav").addClass('entypo-docs');
+        $("this").replaceWith(" ");
+      });
+
+      $(".item").click(function () {
+        $(".code").slideToggle("slow", function () {
+          // Animation complete.
+        });
+      });
+
+    }); //end doc ready function
+
+  </script>
   <script>
     setShareLinks();
 
@@ -133,8 +169,6 @@
       })
     }
   </script>
-  
-  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -145,8 +179,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

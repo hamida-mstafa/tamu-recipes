@@ -12,12 +12,12 @@
 .myhome1{
     background-color: rgba(0, 0, 0, 0.5);    height: 50vh;
 }
-  
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     }
-    
+
     .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
@@ -31,7 +31,7 @@
         text-align: center;
     }
 
-   
+
     body {
       width: 95%;
       max-width: 700px;
@@ -41,47 +41,47 @@
       padding: 0 10px 20px 10px;
       margin: 0 auto 0 auto;
     }
-    
+
     h1 {
       font-size: 24px;
       text-align: center;
     }
-    
+
     h1 span {
       display: block;
       font-size: 18px;
       font-weight: normal;
     }
-    
+
     code {
       background-color: #eee;
       padding: 0 3px 0 3px;
     }
-    
+
     .links ul {
       list-style: none;
       padding: 0;
       margin: 0 0 20px 0;
     }
-    
+
     .links li {
       font-size: 16px;
       text-align: center;
       cursor: pointer;
     }
-    
+
     .links li:hover {
       text-decoration: underline;
     }
-    
+
     .notes {
       width: 100%;
       margin: 0 0 20px 0;
     }
 
 /* modal css */
-* { 
-	box-sizing: border-box; 
+* {
+	box-sizing: border-box;
 }
 body {
 	color: #ABABAB;
@@ -97,7 +97,7 @@ a {
    max-width:800px;
    margin: 0 auto;
 }
-.page {	
+.page {
 	background: #FFF;
 	position: relative;
 	width: 33%;
